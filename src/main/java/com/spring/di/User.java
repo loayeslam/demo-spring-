@@ -3,9 +3,12 @@ package com.spring.di;
 public class User implements UserInterface {
 	private PersonInterface person;
 	
-	public User(PersonInterface person) {
-		this.person=person;
+	
+	
+	public void setPerson(PersonInterface person) {
+		this.person = person;
 	}
+
 	@Override
    public void start() {
 	   System.out.println("I am User");

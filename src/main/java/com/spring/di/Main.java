@@ -8,11 +8,12 @@ public class Main {
 		
 		/*
 		Person person = new Person();
-		User user = new User(person);
+		User user = new User();
+		user.setPerson(person);
 		user.getPerson();
-	   */
+	  */
 		
-
+        
 		ClassPathXmlApplicationContext context = 
 				
 				new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -22,14 +23,14 @@ public class Main {
 		user.getPerson();
 		
 		
-		PersonInterface person = context.getBean("person",PersonInterface.class);
+		//PersonInterface person = context.getBean("person",PersonInterface.class);
 		
-		person.begin();
+		//person.begin();
 		
 		context.close();
 		
 	
-	
+
 
 		
 		
