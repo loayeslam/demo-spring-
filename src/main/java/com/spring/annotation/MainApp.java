@@ -12,9 +12,9 @@ public class MainApp {
 						
 						new ClassPathXmlApplicationContext("applicationContext.xml");
 				 
-		SportInterface sp = context.getBean("ts",SportInterface.class);
+		MasterInterface ms = context.getBean("master",MasterInterface.class);
 		
-		sp.mySport();
+		ms.callMySport();
 		
 		
 		context.close();
