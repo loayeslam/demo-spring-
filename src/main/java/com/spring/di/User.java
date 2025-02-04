@@ -37,4 +37,15 @@ public class User implements UserInterface {
 	public void getPerson() {
 		this.person.begin();
 	}
+	
+	public void doStart() {
+	  System.out.println("Start");
+	}
+	public void doEnd() {
+	  System.out.println("End");
+	}
+	
+	
+	
+	
 }
