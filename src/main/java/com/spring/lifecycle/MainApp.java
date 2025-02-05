@@ -12,16 +12,14 @@ public class MainApp {
 	  
 	PersonInterface admin1 = context.getBean("admin",PersonInterface.class);
 	
-	PersonInterface admin2 = context.getBean("admin",PersonInterface.class);
+
 	
 	
        admin1.name();
-       admin2.name();
+     
        
        System.out.println(admin1);
-       System.out.println(admin2);
-       
-       System.out.println(admin1==admin2);
+     
 	
 	  context.close();
 	}
